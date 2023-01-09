@@ -3,4 +3,4 @@ def print_last_digit(number):
     number = str(number)
     last = number[-1]
     number = int(number)
-    print(last, end" ")
+    print(last, end="")

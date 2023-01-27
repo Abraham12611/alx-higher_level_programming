@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    if len(a_dictionary) == 0:
-        print("None")
-
-    for keys in a_dictionary.keys():
-        print("{}: {}".format(sort(keys), a_dictionary.get(keys)))
+    list_ord = list(a_dictionary.keys())
+    list_ord.sort()
+    for i in list_ord:
+        print("{}: {}".format(i, a_dictionary.get(i)))
